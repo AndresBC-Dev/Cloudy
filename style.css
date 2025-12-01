@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(13, 13, 12);
+    background-color: rgb(12, 12, 12);
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
     border-bottom: 1px solid black;
 }
 
-.container .cloud {
+.cloud {
     position: relative;
     width: 320px;
     height: 100px;
@@ -30,7 +30,7 @@ body {
     animation: animateCloud 2s steps(1) infinite;
 }
 
-.container .cloud::after {
+.cloud::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -39,7 +39,7 @@ body {
     z-index: 1000;
 }
 
-.container .cloud::before {
+.cloud::before {
     content: '';
     position: absolute;
     top: -50px;
@@ -59,8 +59,7 @@ body {
         filter: drop-shadow(8px 8px 0 #0001) drop-shadow(0 0 50px #fff) brightness(10);
     }
 }
-
-.container .cloud .drop {
+.cloud .drop {
     position: absolute;
     top: 40px;
     background: #05a2eb;
