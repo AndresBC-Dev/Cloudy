@@ -31,14 +31,6 @@ body {
     animation: animateCloud 2s steps(1) infinite;
 }
 
-.cloud::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: #484f59;
-    border-radius: 100px;
-    z-index: 1000;
-}
 
 .cloud::before {
     content: '';
@@ -51,6 +43,14 @@ body {
     background: #484f59;
     box-shadow: 90px -10px 0 30px #484f59;
 }
+.cloud::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #484f59;
+    border-radius: 100px;
+    z-index: 1000;
+}
 
 @keyframes animateCloud {
     0% {
@@ -60,6 +60,7 @@ body {
         filter: drop-shadow(8px 8px 0 #0001) drop-shadow(0 0 50px #fff) brightness(10);
     }
 }
+
 .cloud .drop {
     position: absolute;
     top: 40px;
